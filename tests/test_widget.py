@@ -18,7 +18,7 @@ def test_mask_account_card():
     for input_str, expected in test_cases:
         result = mask_account_card(input_str)
         assert result == expected, f"Failed: {input_str} -> {result}"
-    print("✅ All mask_account_card tests passed!")
+    print("All mask_account_card tests passed!")
 
 
 def test_get_date():
@@ -30,10 +30,10 @@ def test_get_date():
     for input_str, expected in test_cases:
         result = get_date(input_str)
         assert result == expected, f"Failed: {input_str} -> {result}"
-    print("✅ All get_date tests passed!")
+    print("All get_date tests passed!")
 
 
 if __name__ == "__main__":
     test_mask_account_card()
     test_get_date()
-    print("\n🎉 All tests passed successfully!")
+    print("\n All tests passed successfully!")
