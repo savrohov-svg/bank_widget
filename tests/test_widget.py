@@ -1,4 +1,6 @@
-from src.widget import mask_account_card, get_date
+"""Модуль с тестами для функций форматирования данных."""
+
+from src.widget import get_date, mask_account_card
 
 
 def test_mask_account_card() -> None:
@@ -26,4 +28,3 @@ def test_get_date() -> None:
     for input_str, expected in test_cases:
         result = get_date(input_str)
         assert result == expected, f"Failed: {input_str} -> {result}"
-        
